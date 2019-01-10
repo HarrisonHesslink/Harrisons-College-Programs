@@ -42,61 +42,36 @@ int main()
 
     if(type == "C"){
       if(type2 == "F"){
-        try {
         double convertedTemp = convertToF(std::stoi(temp));
         std::cout << "Converted Temp (F): " << convertedTemp << "F";
-      } catch (int e) {
-        std::cout << "Temp was not a number!";
-      };
+
       }else if(type2 == "K"){
-        try {
 
         double convertedTemp = convertCToK(std::stoi(temp));
         std::cout << "Converted Temp (K): " << convertedTemp << "K";
-      } catch (int e) {
-        std::cout << "Temp was not a number!";
-      };
 
       }
 
     }else if(type == "F"){
       if(type2 == "C"){
-        try{
 
         double convertedTemp = convertToC(std::stoi(temp));
         std::cout << "Converted Temp (C): " << convertedTemp << "C";
-      } catch (int e) {
-        std::cout << "Temp was not a number!";
-      };
       }else if(type2 == "K"){
-        try{
 
         double convertedTemp = convertFToK(std::stoi(temp));
         std::cout << "Converted Temp (K): " << convertedTemp << "K";
-      } catch (int e) {
-        std::cout << "Temp was not a number!";
-      };
         }
 
     }else if(type == "K"){
       if(type2 == "F"){
-        try{
-
         double convertedTemp = convertKToF(std::stoi(temp));
         std::cout << "Converted Temp (F): " << convertedTemp << "F";
-      } catch (int e) {
-        std::cout << "Temp was not a number!";
-      };
+
       }else if(type2 == "F"){
-        try{
         double convertedTemp = convertKToC(std::stoi(temp));
         std::cout << "Converted Temp (C): " << convertedTemp << "C";
-      } catch (int e) {
-        std::cout << "Temp was not a number!";
-      };
         }
-
-
     }else{
       std::cout << "Not supported Temp Type";
     }
